@@ -4,20 +4,16 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # about image
-image: "images/about/about-page.jpg"
+#image: "images/logos/connectplay.png"
 # meta description
-description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+description : Your Network Is Your Net Worth
 ---
 
-## ABOUT OUR JOURNY
+## About Our Journy
+Est 2002, now 18 years in ICT, providing product, service & software support systems to Telcos / ISP’s.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-et.dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet consectetur,
-adipisicing elit. Saepe ipsa illo quod veritatis, magni debitis fugiat dolore voluptates! Consequatur,
-aliquid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat perferendis sint optio similique.
-Et amet magni facilis vero corporis quos.
+Primary focus is delivering real operational efficiencies, while improving the ISP customer experience though active management of Customers modem/routers and other CPE.​ In 2011 Connectplay partnered with Netmania-IT to provide the New Zealand market with an entry level, full service TR-069 Auto Configuration Server, and deployed the largest ACS Enterprise platform in APAC with Spark New Zealand in 2017.
 
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum, dolor sit amet consectetur
-adipisicing elit. Ipsum a, facere fugit error accusamus est officiis vero in, nostrum laboriosam corrupti
-explicabo, cumque repudiandae deleniti perspiciatis quae consectetur enim. Laboriosam!
+Understanding the limitations of current ACS platforms, ConnectPlay began development on “NEURON” a next generation Device Management platform for Services providers. In 2019 NEURON was successfully deployed into a number of Service Providers across the APAC region, including Telecom Fiji.
+
+Working closely with NZ Internet Service Providers and Integrators, Connectplay develops and refines processes to improve the customer experience and "take the pain away" by reducing CPE deployment and Customer Support costs.

@@ -34,13 +34,24 @@
 {{ if $data.homepage.banner_feature.enable }}
 {{ with $data.homepage.banner_feature }}
 <section class="bg-gray overflow-md-hidden">
-  <div class="container-fluid p-0">
+  <div class="container-fluid p-0" style="background-color:white;align-self: center;">
+
     <div class="row no-gutters">
-      <div class="col-xl-4 col-lg-5 align-self-end">
-        <img class="img-fluid w-100" src="{{ .image | absURL }}" alt="banner-feature">
+      <div class="col-xl-4 col-lg-5 align-self-end" style="background-color:white;align-self:center;padding-left: 30px;;">
+<style>
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
+        <img class="img-fluid w-100" src="{{ .image | absURL }}" alt="banner-feature" style= "object-fit: contain;" >
       </div>
       <div class="col-xl-8 col-lg-7">
-        <div class="row feature-blocks bg-gray justify-content-between">
+        
+        <h2 class="section-title " style= "text-align: center;">{{ .title | markdownify }}</h2>  
+            <div class="row feature-blocks bg-gray justify-content-between">
+          
           {{ range .feature_item }}
           <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
             <i class="{{ .icon }} mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
@@ -62,9 +73,11 @@
 {{ with $data.homepage.about }}
 <section class="section">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-2 order-md-1">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
+    <div class="row ">
+      <div class="col-12">
+        <h4 class="section-title">{{ .subtitle | markdownify }}</h4>
+        <h3 class="section-title">{{ .title | markdownify }}</h3>
+        
         <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
@@ -80,45 +93,88 @@
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
-<!-- /about us -->
-
-<!-- courses -->
-{{ if $data.homepage.course.enable }}
-<section class="section-sm">
+<section class="section" style="background-color: lightgrey;">
   <div class="container">
-    <div class="row">
+    <div class="row ">
       <div class="col-12">
-        <div class="d-flex align-items-center section-title justify-content-between">
-          <h2 class="mb-0 text-nowrap mr-3">{{ $data.homepage.course.title }}</h2>
-          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
-          <div>
-            <a href="{{ `course` | relLangURL }}" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">{{ i18n "see_all" }}</a>
-          </div>
-        </div>
+              
+        <h6 style="text-align: center;line-height:2.5;"> Internet Gateway Devices  |  VoIP Phones  |  TR-069   |   TR-369  |   Automated Configuration Server (ACS)   |   Protocol Stack supporting more than 14 protocols 
+          (TR-069, TR-369, SSH, Telnet, SNMP, HTTPS, …)   |  Service Monitoring   |   WiFi Optimization   |   Service Assurance   |   
+          Self-Service & Zero Touch Provisioning   |  Data Model Normalization  |   IoT Integration via API  IoT Event Stream Processing   |  IoT Device Management  
+           |   Proactive Network Maintenance  |   ACS in the Cloud   |   IP Address Management (DHCPv4/v6)   |   VoIP Management   | 
+        </h6>
+       
       </div>
-    </div>
-    <!-- course list -->
-    <div class="row justify-content-center">
-      <!-- course item -->
-      {{ range first 6 (where site.RegularPages "Type" "course")}}
-      <div class="col-lg-4 col-sm-6 mb-5">
-        {{ .Render "course" }}
-      </div>
+      {{ with .image }}
+      
       {{ end }}
-    </div>
-    <!-- /course list -->
-    <!-- mobile see all button -->
-    <div class="row">
-      <div class="col-12 text-center">
-        <a href="{{ `course` | relLangURL }}" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">{{ i18n "see_all" }}</a>
-      </div>
     </div>
   </div>
 </section>
 {{ end }}
-<!-- /courses -->
+{{ end }}
+<!-- /about us -->
+
+<!-- cours -->
+{{ if $data.homepage.customers.enable }}
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h2 class="mb-0 text-nowrap mr-3">{{ $data.homepage.customers.title }}</h2>
+          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <div>
+            <a href="{{ `customers` | relLangURL }}" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">{{ i18n "see_all" }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- customers list -->
+    <div class="row justify-content-center">
+      <!-- customers item -->
+      {{ range first 6 (where site.RegularPages "Type" "customers")}}
+      <div class="col-lg-4 col-sm-6 mb-5">
+        {{ .Render "customers" }}
+      </div>
+      {{ end }}
+    </div>
+    
+    <div class="row justify-content-center">
+      <!-- customers item -->
+      
+      </div class= "col-md-12">
+      <div class="d-flex align-items-center section-title justify-content-between">
+        <h2 class="mb-0 text-nowrap mr-3">Our Bussiness Partner</h2>
+        <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+        <div>
+          <a href="{{ `customers` | relLangURL }}" class=""></a>
+        </div>
+      </div>
+     
+        <h3 style="text-align: center;"></h3>
+        <p style="text-align: center;">We provide service to telecomunication market in New Zealand using Huawei devices.  </p>
+        
+        <ul class="list-inline mb-2">
+      
+    					
+          <li  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 400px ; height: 260px;align-items: center;margin-left: auto; margin-right: auto;">
+           <a   href="#"><img src="images/logos/huawei.png" style="width:50%; display: block; margin-left: auto; margin-right: auto; padding-top: 30px;"> 
+          </a></li>
+                
+
+        </ul>
+      </div>
+    </div>
+    </div>
+    <!-- /customers list -->
+    <!-- mobile see all button -->
+    
+  </div>
+</section>
+{{ end }}
+<!-- /customers -->
 
 <!-- cta -->
 {{ if $data.homepage.cta.enable }}
@@ -127,8 +183,10 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h6 class="text-white font-secondary mb-0">{{ .subtitle | markdownify }}</h6>
+        
         <h2 class="section-title text-white">{{ .title | markdownify }}</h2>
+        <h6 class="text-white font-secondary mb-0" style="padding-bottom: 10px;">{{ .subtitle | markdownify }}</h6>
+        <h6 class="text-white font-secondary mb-0" >{{ .subtitle2 | markdownify }}</h6>
         {{ if .button.enable }}
         {{ with .button }}
         <a href="{{ .link | absLangURL }}" class="btn btn-secondary">{{ .label }}</a>

@@ -7,12 +7,12 @@ bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
 # post thumbnail
-image: "images/blog/post-3.jpg"
+image: "images/blog/.jpg"
 # post author
-author: "John Doe"
+#author: "John Doe"
 # taxonomy
 categories: ["English Learning"]
-tags: ["Advice", "English"]
+#tags: ["Advice", "English"]
 # type
 type: "post"
 ---

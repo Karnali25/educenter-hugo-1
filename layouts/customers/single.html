@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<!-- section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <!-- customers thumb -->
+        <img src="{{ .Params.Image | relURL }}"class="img-fluid w-100">
+      </div>
+    </div>
+    
+     
+      <!-- border -->
+      <div class="col-12 mt-4 order-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+    </div>
+    <!-- customers details -->
+
+    </div>
+  </div>
+</section>
+<!-- /section -->
+
+<!-- related customers -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">{{ i18n "related_customers" }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <!-- customers item -->
+      {{ $related := (where site.RegularPages "Type" "customers") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) | shuffle | first 3}}
+      {{ range first 3 $related }}
+      <div class="col-lg-4 col-sm-6 mb-5">
+        {{ .Render "customers"}}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- /related customers -->
+
+{{ end }}

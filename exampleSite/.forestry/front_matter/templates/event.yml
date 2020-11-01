@@ -27,8 +27,8 @@ fields:
   label: fee
   description: Event fee
 - type: text
-  name: apply_url
-  label: apply_url
+  name: Contact_url
+  label: Contact_url
   description: Application submit link
 - type: field_group_list
   name: speaker

@@ -1,88 +1,69 @@
 <!-- footer -->
 <footer>
-  <!-- newsletter -->
+  <!-- ewsletter -->
   {{ if site.Params.subscription.enable }}
   {{ with site.Params.subscription }}
-  <div class="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-          <h3 class="text-white">{{ i18n "subscribe_newsletter" }}</h3>
-          <form action="{{ .mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" target="_blank">
-            <div class="input-wrapper">
-              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="{{ i18n "enter_email" }}">
-              <button type="submit" name="subscribe" class="btn btn-primary">{{ i18n "join" }}</button>
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="{{ .mailchimp_form_name }}" tabindex="-1">
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   {{ end }}
   {{ end }}
   <!-- footer content -->
-  <div class="footer bg-footer section border-bottom">
-    <div class="container">
+  <div class="footer bg-footer section border-bottom" style="padding-top: 40px; background-color:black;">
+    <div class="container" >
       <div class="row">
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
           <!-- logo -->
-          <a class="logo-footer" href="{{ site.BaseURL | relLangURL }}"><img class="img-fluid mb-4" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}"></a>
-          <ul class="list-unstyled">
-            <li class="mb-4">{{ site.Params.address | markdownify }}</li>
-            <li class="mb-4">{{ site.Params.email | markdownify }}</li>
-            <li class="mb-4">{{ site.Params.mobile | markdownify }}</li>
-          </ul>
+          <a class="logo-footer" href="{{ site.BaseURL | relLangURL }}"><img class="img-fluid mb-4" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" style="width: 80%;"></a>
+          <p  style= "" > Est 2002, now 18 years in ICT, providing product, service & software support systems to Telcos / ISP’s. </p>
+          <p style= "">We are a 100% owned New Zealand Company, specialising in providing equipment, solutions and support services for broadband.</p>
+          
         </div>
         <!-- company -->
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5 text-uppercase">{{ i18n "company" }}</h4>
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0" >
+          <h4 class="text-white mb-5 text-uppercase">Quick Links</h4>
           <ul class="list-unstyled">
             {{ range site.Menus.main }}
             {{ if not .HasChildren }}
-            <li class="mb-3"><a class="text-color" href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+            <li class="mb-3" ><a class="text-color" href="{{ .URL | absLangURL }}"  style= "">{{ .Name }}</a></li>
             {{ end }}
             {{ end }}
           </ul>
         </div>
         <!-- links -->
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5 text-uppercase">{{ i18n "links" }}</h4>
-          <ul class="list-unstyled">
+          <h4 class="text-white mb-5 text-uppercase">Discover</h4>
+          <ul class="list-unstyled" style="">
             {{ range site.Menus.footer }}
-            <li class="mb-3"><a class="text-color" href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+            <li class="mb-3"><a class="" href="{{ .URL | absLangURL }}"  style= "">{{ .Name }}</a></li>
             {{ end }}
           </ul>
         </div>
         <!-- support -->
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5 text-uppercase">{{ i18n "courses" }}</h4>
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <h4 class="text-white mb-5 text-uppercase"> Contact Details</h4>
+        
           <ul class="list-unstyled">
-            {{ range first 5 (where site.RegularPages "Type" "course")}}
-            <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
-            {{ end }}
+            <li class="mb-4"><a href= "https://www.google.com/maps/dir/-36.8945109,174.8046436/connect+play/@-36.8949697,174.7999946,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x6d0d48e880ec7e43:0x4992ce660883894e!2m2!1d174.801127!2d-36.8960217">{{ site.Params.address | markdownify }}</li>
+            <li class="mb-4">{{ site.Params.email | markdownify }}</li>
+            <li class="mb-4"><a href="tel:{{ site.Params.mobile }}">{{ site.Params.mobile | markdownify }}</a></li>
           </ul>
         </div>
         <!-- support -->
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5 text-uppercase">{{ i18n "new_notice" }}</h4>
-          <ul class="list-unstyled">
-            {{ range first 3 (where site.RegularPages "Type" "notice")}}
-            <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
-            {{ end }}
-          </ul>
-        </div>
+       
       </div>
     </div>
   </div>
   <!-- copyright -->
-  <div class="copyright py-4 bg-footer">
+  <div class="copyright py-4 bg-footer" style= "background-color: black; ">
     <div class="container">
       <div class="row">
         <div class="col-sm-7 text-sm-left text-center">
-          <p class="mb-0">{{ site.Params.copyright | markdownify }}</p>
+          <p class="mb-0">{{ site.Params.copyright | markdownify }}    </p>
+        
+          {{ range site.Params.terms }}
+          <a class="d-inline-block p-2" href="{{ .URL | absLangURL }}"> Terms & Conditions</a>
+          {{ end }}
+        
         </div>
         <div class="col-sm-5 text-sm-right text-center">
           <ul class="list-inline">

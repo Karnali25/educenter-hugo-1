@@ -2,6 +2,79 @@
 
 {{ $data := index site.Data site.Language.Lang }}
 
+
+
+
+<!-- teacher -->
+{{ if $data.homepage.blog }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- teacher -->
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
+      
+          <img src="images/logos/" alt="" class="img-responsive">
+          <div class="widget-title">
+              <h3 style="text-align: center;"> We're Local</h3>
+              
+          </div>
+          <!-- end title -->
+             <p class="lead" style="color:#333;text-align: center;">Kiwi owned and operated since 2002, Specializing in providing equipment, solutions and support services for broadband.</p>
+
+          <hr> 
+
+        
+
+        
+      </div>
+
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
+        <div class="widget clearfix">
+          <img src="images/logos" alt="" class="img-responsive">
+          <div class="widget-title">
+             <h3 style="text-align: center;">We're Modern</h3>
+             
+          </div>
+          <!-- end title -->
+          <p class="lead" style="color:#333;text-align: center;">Leveraging modern languages and  tooling we built a better<br> ACS suited for the modern <br>world. </p>
+
+          <hr> 
+
+        
+
+        </div><!--widget -->
+      </div>
+
+      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="widget clearfix">
+          <img src="images/logos" alt="" class="img-responsive">
+          <div class="widget-title">
+              <h3 style="text-align: center;">We're Experienced</h3>
+                          
+          </div>
+          <!-- end title -->
+          <p class="lead" style="color:#333;text-align: center;">With 15+ years experience in telecommunications  we understand the challenges of a modern ISP.</p>
+
+          <hr> 
+
+        
+
+        </div><!--widget -->
+      </div>
+    
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /teacher -->
+
+
+
 <!-- about -->
 <section class="section">
   <div class="container">
@@ -43,26 +116,5 @@
 {{ partial "success-story.html" . }}
 <!-- /success story -->
 
-<!-- teacher -->
-{{ if $data.homepage.blog.enable }}
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="section-title">{{ i18n "our_teachers" }}</h2>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <!-- teacher -->
-      {{ range first 3 (where site.RegularPages "Type" "teacher")}}
-      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        {{ .Render "teacher" }}
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-<!-- /teacher -->
 
 {{ end }}

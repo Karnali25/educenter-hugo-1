@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<!-- customers -->
+<section class="section">
+  <div class="container">
+    <!-- customer list -->
+    <div class="row justify-content-center">
+      <!-- course item -->
+      {{ range .Data.Pages }}
+      <div class="col-lg-4 col-sm-6 mb-5">
+        {{ .Render "customers" }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="row justify-content-center">
+      <!-- customers item -->
+      {{ $data := index site.Data site.Language.Lang }}
+      {{ with $data.homepage.customers }}
+      </div class= "col-md-12">
+     
+        <h3 style="text-align: center;">Our Bussiness Partner</h3>
+        <p style="text-align: center;">We provide end to end IoT solutions using Huawei devices.  </p>
+        
+        <ul class="list-inline mb-2">
+      
+          
+          <li  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 400px ; height: 260px;align-items: center;margin-left: auto; margin-right: auto;">
+         
+         <img class="" src="{{ .customer_img | absURL }}" alt="about image" style="width:50%; display: block; margin-left: auto; margin-right: auto; padding-top: 30px;">
+        </li>
+                
+
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+ 
+
+{{ end }}

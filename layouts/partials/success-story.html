@@ -4,13 +4,17 @@
 <section class="section bg-cover" data-background="{{ .bg_image | absURL }}">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-sm-4 position-relative success-video">
-        <a class="play-btn venobox" href="{{ .video_link | safeURL }}" data-vbtype="video">
-          <i class="ti-control-play"></i>
-        </a>
+      <div class=" col-sm-5 position-relative success-video" >
+
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | absURL }}" class="btn btn-secondary" style="margin-top: 150px; margin-left: 200px; color: black;">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+       
       </div>
-      <div class="col-lg-6 col-sm-8">
-        <div class="bg-white p-5">
+      <div class="col-lg-6 col-sm-8" style="padding-left: 0px;">
+        <div class="bg-white " style="padding: 40px; width: 600px;">
           <h2 class="section-title">{{ .title | markdownify }}</h2>
           <p>{{ .content | markdownify }}</p>
         </div>

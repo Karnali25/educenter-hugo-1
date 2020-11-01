@@ -6,7 +6,7 @@ function initialize() {
   var longitude = $('#map_canvas').attr('data-longitude');
   var mapMarker = $('#map_canvas').attr('data-marker');
   var mapMarkerName = $('#map_canvas').attr('data-marker-name');
-  var nottingham = new google.maps.LatLng(latitude, longitude);
+  var auckland = new google.maps.LatLng(latitude, longitude);
   var style = [{
       "featureType": "landscape",
       "stylers": [{
@@ -105,7 +105,7 @@ function initialize() {
     }
   ];
   var mapOptions = {
-    center: nottingham,
+    center: auckland,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     backgroundColor: "#000",
     zoom: 15,
@@ -113,7 +113,7 @@ function initialize() {
     zoomControl: true,
     mapTypeControl: false,
     scaleControl: false,
-    streetViewControl: false,
+    streetViewControl: true,
     overviewMapControl: false,
     zoomControlOptions: {
       style: google.maps.ZoomControlStyle.LARGE
@@ -128,12 +128,14 @@ function initialize() {
   var marker_image = mapMarker;
   var pinIcon = new google.maps.MarkerImage(marker_image, null, null, null, new google.maps.Size(37, 55));
   marker = new google.maps.Marker({
-    position: nottingham,
+    position: auckland,
     map: map,
     icon: pinIcon,
     title: mapMarkerName
   });
 }
+
+
 var map = document.getElementById('map_canvas');
 if (map != null) {
   google.maps.event.addDomListener(window, 'load', initialize);
