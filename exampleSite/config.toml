@@ -59,13 +59,10 @@ weight = 3
 name = "Our Services"
 hasChildren = true
 
-
     [[menu.main]]
   parent = "Our Services"
   name = "Routers"
   URL = "event"
-
-
 
   [[menu.main]]
   parent = "Our Services"
