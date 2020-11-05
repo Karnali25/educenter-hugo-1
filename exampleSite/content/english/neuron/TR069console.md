@@ -28,14 +28,25 @@ Such as, CPE Status, Device Info, WLAN status, LAN Status, LAN Status, WAN Statu
 * Management console can manage multiple device from a singe user like modems, VOIP device and IP phones. This page shows managed device information, gives real time responce and real time data updates. Search query based on value or parameters, shows quick provisioning widgets, inform history and sessions, RPC history tracking and force connection request. 
 
 ### Device Estate
-* Device estate feature used for quick search for device, Search on any of the columns and quick nag=vigation to CPE DEVICE STATS.
+* Device estate feature used for quick search for device, Search on any of the columns and quick navigation to CPE DEVICE STATS.
 
 ### Policy Engine
 
+The Management Console enables policy management and enforcement. We can defined policy per data model.The following policies can be defined and enforced:
+
+* Communication time intervals: the time interval during which the CPE must notify the ACS and search for updates (Inform Time Interval)
+* Polling: the parameter values that the CPE must inform periodically (polling), such as: QoS parameters, bytes sent/received, etc.
+* User Updates: whether the CPE should inform the ACS immediately or during the next scheduled Inform if the user changed a value (such as SIP server name).
+* Blocking: blocking the user from changing specific parameter values.
 
 ### Group Manager
+The Management Platform enables remote configuration of a group of devices (mass update). The update may include parameter values, configuration or firmware files, and can be sent to:
 
-### Support of the full set of TR-069 Protocols
+CPEs of a specific CPE model type
+Customer-defined groups of CPEs
+The update can be performed immediately, or scheduled for a certain time and date. The customer can also control the frequency and quantity of updates to reduce ACS server load.
+
+### Support of the full set of data models of TR-069 protocol
 
 The solution supports the following Broadband Forum Technical Reports. The additional protocols support is added as the protocols are updated by the Broadband Forum.
 
@@ -52,6 +63,5 @@ The solution supports the following Broadband Forum Technical Reports. The addit
 * TR-143 – Enabling Network Throughput Performance Tests and Statistical Monitoring
 * TR-156 – Using GPON Access in the context of TR-101
 * TR-157 – Component Objects for CWMP
-* TR-181i2 - Device Data Model for TR-69
 * WT-181 – Device Data Model for TR-69
 * TR-196 - Femto Access Point Service Data Model

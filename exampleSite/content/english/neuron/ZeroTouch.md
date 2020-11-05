@@ -19,7 +19,9 @@ image: "images/neuron/zerotouch.png"
 * the Provisioning portal enables non-technical subscribers to smoothly install and have their devices configured automatecally as well as auto activate the additional services, without help of technician or help desk. 
 * The subscribers only need to connect the device to the broadband line connection and everything will configured automatically. 
 
-* 
+
+
+
 
 
 
