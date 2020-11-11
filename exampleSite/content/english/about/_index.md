@@ -1,15 +1,11 @@
 ---
-title: "About Us"
-draft: false
-# page title background image
-bg_image: "images/backgrounds/page-title.jpg"
-# about image
-#image: "images/logos/connectplay.png"
-# meta description
-description : Your Network Is Your Net Worth
----
+title: About Us
+bg_image: images/backgrounds/page-title.jpg
+description: Your Network Is Your Net Worth
 
-## About Our Journy
+---
+## About Our Journey
+
 Est 2002, now 18 years in ICT, providing product, service & software support systems to Telcos / ISP’s.
 
 Primary focus is delivering real operational efficiencies, while improving the ISP customer experience though active management of Customers modem/routers and other CPE.​ In 2011 Connectplay partnered with Netmania-IT to provide the New Zealand market with an entry level, full service TR-069 Auto Configuration Server, and deployed the largest ACS Enterprise platform in APAC with Spark New Zealand in 2017.
