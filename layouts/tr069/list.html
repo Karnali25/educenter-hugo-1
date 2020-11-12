@@ -231,6 +231,7 @@ input[type="hidden" i] {
     background: #f8f9fa;
 }
           </style>
+         
    <div class="c-test-device">
      <div class="l-section__product l-body__product">
             <p class="c-product__overview__description c-product__overview__description--left">TR-069 ACS works with 
@@ -238,9 +239,10 @@ input[type="hidden" i] {
                Enter your e-mail to receive instructions on how Neuron ACS works with your device and how to connect with Neuron ACS.
             </p>
            <div>
-                <h2 class="c-product__head">QUICK STEPS</h2>
+                <h2 class="c-product__head"></h2>
                 
-                    <p class="c-product__overview__description l-paragraph-space">Please send a quick email to get started with the Neuron ACS</p> 
+                    <p class="c-product__overview__description l-paragraph-space">Please send a quick email to get started with the Neuron ACS <br>
+                  
                <div>
                     
                       
@@ -248,22 +250,23 @@ input[type="hidden" i] {
 
             </div>
         </div>
-
         {{ $data := index site.Data site.Language.Lang }}
-          {{ with $data.homepage.Neuron }}
+        {{ with $data.homepage.Neuron }}
+        
         <div class="l-section__product l-body__product">          
-            <div class="c-product__banner c-product c-product__banner--test-tr">
-                <div class="c-product__banner__wrapper c-product__banner__wrapper--test-tr"><span class="c-product__list__item__number"></span>
-                    <p class="c-product__content"> If you want to check out the complete set of functionalities offered by Neuron ACS, <a href="{{ .link1 | absLangURL }}" > Contact us</a></p>
+           
+                <div class="c-product__banner__wrapper c-product__banner__wrapper--test-tr">
+                    
+                    
                         {{ if .button.enable }}
                         {{ with .button }}
-                        <a href="{{ .link | absLangURL }}" class="btn btn-primary">About Neuron ACS</a>
+                        <a href="{{ .link | absLangURL }}" class="btn btn-primary " style=" margin-left: 40%;">About Neuron ACS</a>
                         {{ end }}
                         {{ end }}
                     
                 </div>
               
-            </div>
+   
             <br>
         </div>
         {{ end }}
@@ -287,7 +290,7 @@ input[type="hidden" i] {
                             </label>
                         </fieldset>
                         <fieldset>
-                            <a href="#" class="c-test-form__submit btn btn-primary-outline1 js-btn-submit" onclick="CheckVisitor(); ga('send', 'event', 'conversion', 'form', 'TR-069 TEST', );">Test your device</a>
+                            <a href="#" class="c-test-form__submit btn btn-primary-outline1 js-btn-submit" onclick="CheckVisitor(); ga('send', 'event', 'conversion', 'form', 'TR-069 TEST', );">Send</a>
                         </fieldset>
                         <p class="c-test-form__form-error js-form-error">          </p>
                         <input type="hidden" class="recaptchaInputHidden" name="recaptchaInputHidden" value="03AGdBq24CTFhk8dfjBMU-1rgR2pvlrK2FQEH24ObERD_otbDuC3D19xTwtwnefKokPx0f4aJWlK-qf8q_ccAIvDcW54mH_dEQxfk5iVMvPWoIoF5xYkBsz2IlV-amreybFo_U-mWc5iEt5AyJhsHPap3X_0po4QcY1MA-XKve8XCWuawTSZx6GfoGSeow928gqVLGu6klB8Ta6sy_R9zd3oeoDVINuWooKPrAH8fb0r8zEDcZt2tvuhGL10hfukqb3X18xSr3be7LSBjoWE0-2kDWdJlI4aXocMmNV_gT_cea1mw3QnEBnrG9CJmImZTNAvXuJOPrxagGMYjjmMzBRNU8QZz5_QXgBDB-U_7S72M3iyQuGyCnxvoHIec2bh7XwhKoun_oza4rWL32LbfLdwn5BwVoTqy0PZYfb-0RAxuzyVwVEZ6dKvc">

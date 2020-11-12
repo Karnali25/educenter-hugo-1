@@ -63,7 +63,7 @@ hasChildren = true
     [[menu.main]]
   parent = "Our Services"
   name = "Routers"
-  URL = "event"
+  URL = "device"
 
   [[menu.main]]
   parent = "Our Services"
@@ -90,7 +90,7 @@ URL = ""
 
 [[menu.footer]]
 name = "Routers"
-URL = "event"
+URL = "device"
 
 [[menu.footer]]
 name = "TR-069 Device Management(ACS)"

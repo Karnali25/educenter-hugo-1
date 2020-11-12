@@ -85,21 +85,21 @@ sections:
   templates:
   - teacher
 - type: heading
-  label: Event
+  label: device
 - type: directory
-  path: exampleSite/content/english/event
-  label: Event (en)
+  path: exampleSite/content/english/device
+  label: device(en)
   create: all
   match: "**/*"
   templates:
-  - event
+  - device
 - type: directory
-  path: exampleSite/content/french/event
-  label: Event (fr)
+  path: exampleSite/content/french/device
+  label: device (fr)
   create: all
   match: "**/*"
   templates:
-  - event
+  - device
 - type: heading
   label: Research
 - type: directory

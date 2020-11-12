@@ -13,8 +13,8 @@
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
           <!-- logo -->
           <a class="logo-footer" href="{{ site.BaseURL | relLangURL }}"><img class="img-fluid mb-4" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" style="width: 80%;"></a>
-          <p  style= "" > Est 2002, now 18 years in ICT, providing product, service & software support systems to Telcos / ISP’s. </p>
-          <p style= "">We are a 100% owned New Zealand Company, specialising in providing equipment, solutions and support services for broadband.</p>
+          <p  > Est 2002, now 18 years in ICT, providing product, service & software support systems to Telcos / ISP’s. </p>
+          <p >We are a 100% owned New Zealand Company, specialising in providing equipment, solutions and support services for broadband.</p>
           
         </div>
         <!-- company -->
@@ -23,7 +23,7 @@
           <ul class="list-unstyled">
             {{ range site.Menus.main }}
             {{ if not .HasChildren }}
-            <li class="mb-3" ><a class="text-color" href="{{ .URL | absLangURL }}"  style= "">{{ .Name }}</a></li>
+            <li class="mb-3" ><a class="text-color" href="{{ .URL | absLangURL }}"  >{{ .Name }}</a></li>
             {{ end }}
             {{ end }}
           </ul>
@@ -31,9 +31,9 @@
         <!-- links -->
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5 text-uppercase">Discover</h4>
-          <ul class="list-unstyled" style="">
+          <ul class="list-unstyled" >
             {{ range site.Menus.footer }}
-            <li class="mb-3"><a class="" href="{{ .URL | absLangURL }}"  style= "">{{ .Name }}</a></li>
+            <li class="mb-3"><a class="" href="{{ .URL | absLangURL }}"  >{{ .Name }}</a></li>
             {{ end }}
           </ul>
         </div>
@@ -109,48 +109,4 @@
   ga('create', '{{ . }}', 'auto');
   ga('send', 'pageview');
 </script>
-{{ end }}
-
-
-<!-- cookie -->
-{{ if site.Params.cookies.enable }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
-</div>
-<script>
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: {{ site.Params.cookies.expire_days }}
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-		}
-	})(jQuery);
-</script>
-
-<!-- cookie style -->
-<style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
-
-.cookie-box-hide {
-  display: none;
-}
-</style>
 {{ end }}

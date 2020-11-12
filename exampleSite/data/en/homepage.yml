@@ -12,7 +12,7 @@ slider:
       button:
         enable : true
         label : "View Details"
-        link : "event"
+        link : "device"
 
     # slider item loop
     - title : "The IoT and Device Management Company"
@@ -120,11 +120,11 @@ success_story:
   
 
 
-############################# event ################################
-event:
+############################# device ################################
+device:
   enable : false
   title : "Router"
-  # event item comes from "content/**/event" folder.
+  # device item comes from "content/**/device" folder.
 
   
 ########################### funfacts ############################
