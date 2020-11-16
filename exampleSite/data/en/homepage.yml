@@ -188,7 +188,7 @@ tr069:
     bg_image : "images/neuron/bg.jpg"
     title : "Test TR-069"
     content : " Your device support TR-069? If yes try our Neuron ACS "
-    src : i"mages/neuron/NeuronProductSheet.pdf
+    src : images/neuron/NeuronProductSheet.pdf
     link1: "contact"
 
     subtitile: Brochure

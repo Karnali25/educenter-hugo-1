@@ -34,27 +34,26 @@ Such as, CPE Status, Device Info, WLAN status, LAN Status, LAN Status, WAN Statu
 
 The Management Console enables policy management and enforcement. We can defined policy per data model.The following policies can be defined and enforced:
 
-* Communication time intervals: the time interval during which the CPE must notify the ACS and search for updates (Inform Time Interval)
-* Polling: the parameter values that the CPE must inform periodically (polling), such as: QoS parameters, bytes sent/received, etc.
+* Time intervals: the time interval during which the CPE must notify the ACS and search for updates (Inform Time Interval)
 * User Updates: whether the CPE should inform the ACS immediately or during the next scheduled Inform if the user changed a value (such as SIP server name).
 * Blocking: blocking the user from changing specific parameter values.
 
 #### Group Manager
 The Neuron ACS Management Platform enables remote configuration of a group of devices (mass update). The update may include parameter values, configuration or firmware files, and can be sent to:
 
-CPEs of a specific CPE model type
-Customer-defined groups of CPEs
-The update can be performed immediately, or scheduled for a certain time and date. The customer can also control the frequency and quantity of updates to reduce ACS server load.
+* CPEs of a specific CPE model type
+* Customer-defined groups of CPEs
+* The update can be performed immediately, or scheduled for a certain time and date. The customer can also control the frequency and quantity of updates to reduce ACS server load.
 
 #### Data models and supported  TR-069 protocols 
 
 Most of the configuration and diagnostics is performed through setting and retrieving the value of the device parameters using Get parameter and Set parameters operations. Device parameters organized in a well-defined hierarchical structure that is mostly common to all device models. The solution supports below [Broadband Forum Technical reports.](https://cwmp-data-models.broadband-forum.org/)
 
 * TR-69 – CPE WAN Management Protocol
-* TR-098 – Internet Gateway Device Data Model for TR-69
+* TR-098 – Internet Gateway Device Data Model 
 * TR-104 – DSLHome™ Provisioning Parameters for VoIP CPE
 * TR-106 – Data Model Template for TR-069-Enabled Devices
-* TR-110 Issue 1.01 – DSLHome™ Reference Models for VoIP Configurations in the DSL Home
+* TR-110 - DSLHome™ Reference Models for VoIP Configurations in the DSL Home
 * TR-111 - Applying TR-069 to Remote Management of Home Networking Devices
 * TR-131 – NBI requirements
 * TR-135 – Data Model for a TR-069 Enabled STB

@@ -5,7 +5,7 @@ title: " CPE WAN Management Protocol (CWMP)"
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : ""
+#description : ""
 
 # Research image
 image: "images/neuron/CWMP-2.png"
