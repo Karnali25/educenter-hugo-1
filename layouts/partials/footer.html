@@ -7,7 +7,7 @@
   {{ end }}
   {{ end }}
   <!-- footer content -->
-  <div class="footer bg-footer section border-bottom" style="padding-top: 40px; background-color:black;">
+  <div class="footer bg-footer section border-bottom" style="padding-top: 40px; background-color:#f8f9fa;">
     <div class="container" >
       <div class="row">
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
@@ -19,7 +19,7 @@
         </div>
         <!-- company -->
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0" >
-          <h4 class="text-white mb-5 text-uppercase">Quick Links</h4>
+          <h4 class=" mb-5 text-uppercase">Quick Links</h4>
           <ul class="list-unstyled">
             {{ range site.Menus.main }}
             {{ if not .HasChildren }}
@@ -30,7 +30,7 @@
         </div>
         <!-- links -->
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
-          <h4 class="text-white mb-5 text-uppercase">Discover</h4>
+          <h4 class=" mb-5 text-uppercase">Discover</h4>
           <ul class="list-unstyled" >
             {{ range site.Menus.footer }}
             <li class="mb-3"><a class="" href="{{ .URL | absLangURL }}"  >{{ .Name }}</a></li>
@@ -40,7 +40,7 @@
         <!-- support -->
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
           <!-- logo -->
-          <h4 class="text-white mb-5 text-uppercase"> Contact Details</h4>
+          <h4 class=" mb-5 text-uppercase"> Contact Details</h4>
         
           <ul class="list-unstyled">
             <li class="mb-4"><a href= "https://www.google.com/maps/dir/-36.8945109,174.8046436/connect+play/@-36.8949697,174.7999946,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x6d0d48e880ec7e43:0x4992ce660883894e!2m2!1d174.801127!2d-36.8960217">{{ site.Params.address | markdownify }}</li>
@@ -54,7 +54,7 @@
     </div>
   </div>
   <!-- copyright -->
-  <div class="copyright py-4 bg-footer" style= "background-color: black; ">
+  <div class="copyright py-4 bg-footer" style= "background-color: #f8f9fa; ">
     <div class="container">
       <div class="row">
         <div class="col-sm-7 text-sm-left text-center">

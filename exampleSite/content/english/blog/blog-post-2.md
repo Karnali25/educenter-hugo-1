@@ -11,21 +11,16 @@ image: "images/blog/c"
 # post author
 #author: "John Doe"
 # taxonomy
-categories: ["English learning"]
+categories: ["Wi-Fi"]
 #tags: ["Education", "Automation"]
 # type
 type: "post"
 ---
 
+
+###
+
+### What is Wi-Fi 6?
+Wi-Fi 6 is the latest standard from the Wi-Fi Alliance based on the 802.11ax protocol, and provides critical capabilities needed for next-generation enterprise requirements. Learn about the key benefits from our wireless experts.
+
 ### 
-The **Internet of Things** 
-
-
-#### 1914 translation by H. Rackham
-But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, **the master-builder** of human
-
-> On the other hand, we denounce w
-
-#### Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-ndus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-

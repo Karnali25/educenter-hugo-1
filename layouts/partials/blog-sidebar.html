@@ -2,7 +2,7 @@
 <aside class="col-lg-4 order-1 order-lg-2">
   {{ "<!-- categories -->" | safeHTML }}
   <div class="bg-white mb-5">
-    <h4 class="mb-4">{{ i18n "categories" }}</h4>
+    <h4 class="mb-4">Categories</h4>
     {{- if isset site.Taxonomies "categories" }}
     {{- if not (eq (len site.Taxonomies.categories) 0) }}
     <ul class="list-unstyled">

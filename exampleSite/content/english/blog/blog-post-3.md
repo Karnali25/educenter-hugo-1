@@ -11,7 +11,7 @@ image: "images/blog/IoT.png"
 # post author
 #author: "Mark Dinn"
 # taxonomy
-categories: ["IoT device management"]
+categories: ["IoT Device "]
 #tags: ["Advice", "Eco"]
 # type
 type: "post"

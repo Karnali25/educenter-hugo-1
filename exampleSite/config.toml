@@ -100,7 +100,7 @@ URL = "neuron"
 
 #################### default parameters ################################
 [params]
-logo = "images/logos/logo2.png"
+logo = "images/logos/logonew.png"
 # Meta data
 #description = "Enhancing Broadband Comapny"
 author = "Connectplay"
