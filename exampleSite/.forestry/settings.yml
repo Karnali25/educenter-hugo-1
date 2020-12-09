@@ -40,13 +40,6 @@ sections:
   match: "**/*"
   templates:
   - device
-- type: directory
-  path: exampleSite/content/french/device
-  label: device (fr)
-  create: all
-  match: "**/*"
-  templates:
-  - device
 - type: heading
   label: Research
 - type: directory
