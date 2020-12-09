@@ -44,7 +44,7 @@ The IoT device management is the process that involves provisioning, configuring
 The device needs to be taken care of as per some acknowledge standards and best practices that make up the IoT device management fundamentals. Any Internet of Things (IoT) device deployment requires four device management fundamentals:
 
 
-* **Provsioning and authenticationg**
+* **Provsioning and authenticating**
 * **Configuration**
 * **Monitoring and dianostics**
 * **Software updates and maintanance**
