@@ -1,4 +1,4 @@
-baseURL = "http://examplesite.org"
+baseURL = "http://connectplaytest"
 disableLanguages = []
 disqusShortname = "educenter"
 paginate = "6"
