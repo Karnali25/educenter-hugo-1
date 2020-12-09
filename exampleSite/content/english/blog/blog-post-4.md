@@ -4,8 +4,7 @@ date: 2020-10-08T15:27:17.000+12:00
 bg_image: images/backgrounds/page-title.jpg
 description: ''
 image: images/neuron/zerotouch.png
-categories:
-- 'IoT Device '
+#categories: 'IoT Device '
 type: post
 
 ---

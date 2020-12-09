@@ -9,7 +9,7 @@ description : "Remote mangemetn of TR-069, MQtt, CoAP(OAM-DM), LwM2M."
 # post thumbnail
 image: "images/neuron/acs-1.PNG"
 image2: "images/neuron/acs-1.PNG" 
-categories: ["Wi-Fi"]
+#categories: ["Wi-Fi"]
 type: "post"
 subtitle: "Connectplay's Neuron ACS Supports"
 ---
