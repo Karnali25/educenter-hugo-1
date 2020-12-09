@@ -34,7 +34,7 @@ name = "Our Services"
 weight = 2
 [[menu.main]]
 URL = "device"
-name = "Routers"
+name = "CPEs"
 parent = "Our Services"
 [[menu.main]]
 URL = "neuron"
