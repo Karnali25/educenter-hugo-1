@@ -23,7 +23,7 @@ sections:
   templates:
   - teacher
 - type: heading
-  label: device
+  label: CPEs
 - type: directory
   path: exampleSite/content/english/device
   label: device(en)
