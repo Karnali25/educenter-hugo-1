@@ -199,39 +199,39 @@
 {{ end }}
 <!-- /success story -->
 
-<!-- device-->
-{{ if $data.homepage.device.enable }}
+<!-- CPEs-->
+{{ if $data.homepage.CPEs.enable }}
 <section class="section bg-gray">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="d-flex align-items-center section-title justify-content-between">
-          <h2 class="mb-0 text-nowrap mr-3">{{ $data.homepage.device.title }}</h2>
+          <h2 class="mb-0 text-nowrap mr-3">{{ $data.homepage.CPEs.title }}</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
           <div>
-            <a href="{{`device` | relLangURL }}" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block text-nowrap">{{ i18n "see_all" }}</a>
+            <a href="{{`CPEs` | relLangURL }}" class="btn btn-sm btn-outline-primary ml-sm-3 d-none d-sm-block text-nowrap">{{ i18n "see_all" }}</a>
           </div>
         </div>
       </div>
     </div>
     <div class="row justify-content-center">
-      <!-- device -->
-      {{ range first 3 (where site.RegularPages "Type" "device")}}
+      <!-- CPEs -->
+      {{ range first 3 (where site.RegularPages "Type" "CPEs")}}
       <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        {{ .Render "device" }}
+        {{ .Render "CPEs" }}
       </div>
       {{ end }}
     </div>
     <!-- mobile see all button -->
     <div class="row">
       <div class="col-12 text-center">
-        <a href="{{`device` | relLangURL }}" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">{{ i18n "see_all" }}</a>
+        <a href="{{`CPEs` | relLangURL }}" class="btn btn-sm btn-outline-primary d-sm-none d-inline-block">{{ i18n "see_all" }}</a>
       </div>
     </div>
   </div>
 </section>
 {{ end }}
-<!-- /device -->
+<!-- /CPEs -->
 
 <!-- blog -->
 {{ if $data.homepage.blog.enable }}

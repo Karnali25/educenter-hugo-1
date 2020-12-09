@@ -2,20 +2,20 @@
 
 
 
-<!-- device single -->
+<!-- CPEs single -->
 <section class="section-sm">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <h2 class="section-title">{{ .Title }}</h2>
       </div>
-      <!-- device image -->
+      <!-- CPEs image -->
       <div class="col-12 mb-4" style=" padding-left: 200px; padding-right: 200px; ">
         <img style="object-fit: contain; padding-left: 100px; padding-right: 100px; height: auto; width: 10%;background: 	rgb(169,169,169);
         background: linear-gradient(90deg, rgba(128,128,128) 0%,  #ffbc3b 100%);" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}" class="img-fluid w-100">
       </div>
     </div>
-    <!-- device info -->
+    <!-- CPEsinfo -->
     {{ $data := index site.Data site.Language.Lang }}
 
 {{ with $data.homepage.Contact_us }}
@@ -75,18 +75,18 @@
       </div>
     </div>
   {{end}}
-    <!-- device details -->
+    <!-- CPEs details -->
     <div class="row">
       <div class="col-12 mb-50 content">
         {{ .Content }}
       </div>
     </div>
-    <!-- device speakers -->
+    <!-- CPEs speakers -->
       </div>
 </section>
-<!-- /device single -->
+<!-- /CPEs single -->
 
-<!-- more device -->
+<!-- more CPEs -->
 <section class="section pt-0">
   <div class="container">
     <div class="row">
@@ -96,16 +96,16 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <!-- device -->
-      {{ $related := (where site.RegularPages "Type" "device") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) | shuffle | first 3}}
+      <!-- CPEs -->
+      {{ $related := (where site.RegularPages "Type" "CPEs") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) | shuffle | first 3}}
       {{ range first 3 $related }}
       <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        {{ .Render "device" }}
+        {{ .Render "CPEs" }}
       </div>
       {{ end }}
     </div>
   </div>
 </section>
-<!-- /more device-->
+<!-- /more CPEs-->
 
 {{ end }}
