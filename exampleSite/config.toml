@@ -1,4 +1,4 @@
-baseURL = "http://connectplay"
+baseURL = "https://connectplay"
 disableLanguages = []
 disqusShortname = "educenter"
 paginate = "6"
