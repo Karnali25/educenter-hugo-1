@@ -159,10 +159,7 @@ Neuron:
     lable: "About Neuron ACS"
     link: "neuron"
 
-####Neuron about####
-Neuronabout:
-  enable : false
-  image : images/neuron/NEURON.png
+
    
 ####tr060 test####
 tr069:
