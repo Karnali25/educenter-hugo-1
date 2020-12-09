@@ -1,4 +1,4 @@
-baseURL = "http://connectplaytest"
+baseURL = "http://connectplaytest.co.nz"
 disableLanguages = []
 disqusShortname = "educenter"
 paginate = "6"
