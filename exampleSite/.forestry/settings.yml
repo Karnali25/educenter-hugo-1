@@ -14,15 +14,6 @@ sections:
   templates:
   - post
 - type: heading
-  label: Course
-- type: directory
-  path: exampleSite/content/english/course
-  label: Course (en)
-  create: documents
-  match: "**/*"
-  templates:
-  - course
-- type: heading
   label: Notice
 - type: directory
   path: exampleSite/content/english/notice
@@ -91,6 +82,15 @@ sections:
   match: "**/*"
   templates:
   - new-page
+- type: heading
+  label: Course
+- type: directory
+  path: exampleSite/content/english/course
+  label: Course (en)
+  create: documents
+  match: "**/*"
+  templates:
+  - course
 - type: heading
   label: Data
 - type: directory
