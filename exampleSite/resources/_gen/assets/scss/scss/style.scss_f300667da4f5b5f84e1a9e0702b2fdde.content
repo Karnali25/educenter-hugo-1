@@ -455,7 +455,7 @@ textarea.form-control {
       background: #1a1a37; } }
 @media (max-width: 991px) {
   .navbar-collapse {
-    background: #1a1a37; } }
+    background: #ffbc3b; } }
 
 .navbar-nav {
   padding-left: 50px;
@@ -463,7 +463,7 @@ textarea.form-control {
   @media (max-width: 991px) {
     .navbar-nav {
       padding-left: 0;
-      background: #1a1a37; } }
+      background: #ffbc3b; } }
 .nav-bg {
   background-color: #1a1a37; }
 
