@@ -17,7 +17,7 @@ image: "images/products/DG8245V.png"
 # entry fee
 #fee: "From: $699"
 # apply url
-Contact_url : "contact"
+#Contact_url : "contact"
 # event speaker
 #speaker:
   # speaker loop name : "Jack Mastio"     image : "images/event-speakers/speaker-1.jpg"     designation : "Teacher"
