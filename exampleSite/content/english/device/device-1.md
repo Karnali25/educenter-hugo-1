@@ -1,36 +1,10 @@
 ---
-title: "Huawei DG8245V"
-# Schedule page publish date
-#publishDate: "2019-01-01T00:00:00Z"
-# event date
-#date: "2030-03-09T15:27:17+06:00"
-# post save as draft
-#draft: false
-# page title background image
-bg_image: "images/backgrounds/page-title.jpg"
-# meta description
-description : ""
-# Event image
-image: "images/products/DG8245V.png"
-# location
-#location: "Dhanmondi, Dhaka"
-# entry fee
-#fee: "From: $699"
-# apply url
-#Contact_url : "contact"
-# event speaker
-#speaker:
-  # speaker loop name : "Jack Mastio"     image : "images/event-speakers/speaker-1.jpg"     designation : "Teacher"
+title: Huawei DG8245V
+bg_image: images/backgrounds/page-title.jpg
+description: ''
+image: images/products/DG8245V.png
 
-  # speaker loop  - name : "John Doe"     image : "images/event-speakers/speaker-2.jpg"     designation : "Teacher"
-
-  # speaker loop   - name : "Randy Luis"     image : "images/event-speakers/speaker-3.jpg"   designation : "Teacher"
-
-  # speaker loop   - name : "Alfred Jin"     image : "images/event-speakers/speaker-4.jpg"     designation : "Teacher"
-
-# type type: "event"
 ---
-
 ### Huawei Router DG8245V
 
 The DG8245V is a home gateway using DSL to connect to the internet. It provides 2 VOIP ports, 4 GE ports and dual-band Wi-Fi (standards compliance: 802.11a/b/g/n/ac).The DG8245V supports flexible routing and standard TR069 management functions, and uses VDSL2/ADSL2+/ADSL2/ADSL technologies to provide high-speed internet access for home users. The high-performance forwarding capability of the device guarantees a stable voice, data, and 4K video experience, making the device future-oriented and an ideal terminal for operators' broadband network deployment.
