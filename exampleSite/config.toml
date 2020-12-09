@@ -1,4 +1,4 @@
-baseURL = "http://connectplaytest.co.nz"
+baseURL = "https://connectplay"
 disableLanguages = []
 disqusShortname = "educenter"
 paginate = "6"
@@ -12,26 +12,33 @@ home = "Home"
 languageCode = "en-us"
 languageName = "En"
 weight = 1
+
 [[menu.footer]]
 URL = ""
 name = "Services"
+
 [[menu.footer]]
 URL = "CPEs"
 name = "CPEs"
+
 [[menu.footer]]
 URL = "neuron"
 name = "TR-069 Device Management(ACS)"
+
 [[menu.footer]]
 URL = "https://neuron.nz"
 name = "Neuron ACS"
+
 [[menu.main]]
 URL = "about"
 name = "About"
 weight = 1
+
 [[menu.main]]
 hasChildren = true
 name = "Our Services"
 weight = 2
+
 [[menu.main]]
 URL = "CPEs"
 name = "CPEs"
