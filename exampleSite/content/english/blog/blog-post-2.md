@@ -1,5 +1,5 @@
 ---
-title: "IoT Device "
+title: "WiFi 6 "
 date: 2020-10-07T15:27:17+06:00
 draft: false
 # page title background image

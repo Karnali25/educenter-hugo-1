@@ -23,7 +23,7 @@ slider:
       button:
         enable : true
         label : "View Details"
-        link : "neuron"
+        link : "https://neuron.nz"
 
    
 
@@ -46,14 +46,13 @@ banner_feature:
       content : "Connectplay's residential range offers low to high end solution for all residential. Our portfolio includes a variety of products ranging from VDSL2 to ETH-WAN UFB ready devices."
 
     # feature item loop
-    - name : "Flexible installation"
-      icon : "ti-download" # icon pack : https://themify.me/themify-icons
-      content : "We offer On-Premisis, multi-tennant and cloud hosted option in Neuron.Connectplay provides free support for all our customers whose products are still under warranty."
+    
 
     # feature item loop
     - name : "Neuron ACS"
+      link:  "https://neuron.nz"
       icon : "ti-harddrives" # icon pack : https://themify.me/themify-icons
-      content : "The affordable scalable, fast and secure ACS for Internet Service Providers of all levels."
+      content : "The affordable scalable, fast and secure ACS for Internet Service Providers of all levels. We have developed Neuron using TLS 1.2 for out frontend NBI and highest CPE-supported level of encryption for outbound SBI."
 
 
 ############################## about ##################################
@@ -91,7 +90,7 @@ cta:
   button:
     enable : true
     label : "View Details"
-    link : "neuron"
+    link : "https://neuron.nz"
 
 ######################## Success story #############################
 success_story:
@@ -126,28 +125,6 @@ device:
   title : "Router"
   # device item comes from "content/**/device" folder.
 
-  
-########################### funfacts ############################
-funfacts:
-  enable : false
-  funfact_item:
-    # funfact item loop
-    - name : "TEACHERS"
-      count : "60"
-
-    # funfact item loop
-    - name : "COURSES"
-      count : "50"
-
-    # funfact item loop
-    - name : "STUDENTS"
-      count : "1000"
-
-    # funfact item loop
-    - name : "SATISFIED CLIENT"
-      count : "1400"
-
-# funfact is for about page
 
 
 
@@ -173,15 +150,20 @@ Contact_us:
 #########Neuron###########
 Neuron:
   enable : false
-  image : images/Neuron.png
+  image : images/logos/Neuron-T500-313.png
+  image2: images/blog/NEURON.png
   bg_image : "images/neuron/bg.jpg"
-  src : images/neuron/NeuronProductSheet.pdf
+  src : images/neuron/NeuronProductSheet.pdfsssssssssssssssssssssss
   button:
     enable: true
     lable: "About Neuron ACS"
     link: "neuron"
 
-
+####Neuron about####
+Neuronabout:
+  enable : false
+  image : images/neuron/NEURON.png
+   
 ####tr060 test####
 tr069:
     enable : false

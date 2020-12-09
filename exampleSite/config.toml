@@ -49,13 +49,10 @@ name = "About"
 URL = "about"
 weight = 1
 
-[[menu.main]]
-name = "Customers"
-URL = "customers"
-weight = 2
+
 
 [[menu.main]]
-weight = 3
+weight = 2
 name = "Our Services"
 hasChildren = true
 
@@ -96,6 +93,9 @@ URL = "device"
 name = "TR-069 Device Management(ACS)"
 URL = "neuron"
 
+[[menu.footer]]
+name = "Neuron ACS"
+URL = "https://neuron.nz"
 
 
 #################### default parameters ################################

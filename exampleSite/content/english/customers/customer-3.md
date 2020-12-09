@@ -7,7 +7,7 @@ bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 #description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
 # course thumbnail
-image: "images/logos/devoli.png"
+image: "images/logos/WN Logo.png"
 # taxonomy
 #category: "Artificial Intelligence"
 # teacher

@@ -4,32 +4,30 @@
 <section class="section " >
   <div class="container ">
     <div class="row ">
-      <div class=" col-lg-6 overlay bg-cover" data-background="{{ .bg_image | absURL }}"  >
+      <div class=" col-lg-6 "  >
   
-       <div class="col-lg-12" style="  margin: 0;
+      <div class="col-lg-12" style="  margin: 0;
        position: absolute;
        top: 40%;
        left: 50%;
        -ms-transform: translate(-50%, -50%);
        transform: translate(-50%, -50%);" >
-        <h3 style="color:white; text-align: center;">{{ .content | markdownify }}</h3>
+      <a  href="https://neuron.nz">  <h3 style="color:black; text-align: center;">{{ .content | markdownify }}</h3></a> 
         {{ range site.Params.tr069 }}
-       </div>
-      
-      
-       <div  style="  margin: 0;
-       position: absolute;
-       top: 80%;
-       left: 50%;
-       -ms-transform: translate(-50%, -50%);
-       transform: translate(-50%, -50%);" >
-        <a href="{{ .URL | absLangURL }}" class="btn btn-primary">Contact Us</a>
-        
-        
-      
-        {{ end }}
-
       </div>
+      
+      <div  style="  margin: 0;
+           position: absolute;
+           top: 80%;
+           left: 50%;
+           -ms-transform: translate(-50%, -50%);
+           transform: translate(-50%, -50%);" >
+         
+     
+        <a href="https://www.neuron.nz" class="btn btn-primary">Get More info</a>
+          
+      </div>
+       {{ end }}
 
         
       </div>

@@ -3,26 +3,50 @@
 <!--neuron --> 
 {{ $data := index site.Data site.Language.Lang }}
 {{ with $data.homepage.Neuron }}
-<section class="section" style="">
+<section class="section" >
   <div class="container"  >
     <div class="row" >
 
-      <div class="col-lg-6">
-          <div class="col-lg-12" style="margin-left:0px; padding-top: 80px;height: 400px; background: 
-              rgb(169,169,169);background: linear-gradient(90deg, rgba(128,128,128) 0%,
-                 #ffbc3b 100%);;">
-                 <img class="" src="{{ .image | absURL }}" alt="" style="width:100%;height:auto;object-fit: contain;">
-                 
-           </div>
-      </div>
-      <div class="col-lg-6 overlay bg-cover" data-background="{{ .bg_image | absURL }}"  >
+      <div class="col-lg-8 centeri ">
+          <div class="col-lg-7 centeri" >
+ 
+                <a href="https://neuron.nz"> <img class="" src="{{ .image | absURL }}" alt="" style="width:100%;height:auto;object-fit: contain;">
+                </a>
+          </div>
 
-      <div class="col-lg-12" >
-          <h3 class="section-title" style="color: white; padding-top: 30px;"> Device Management "Neuron ACS" </h3>
-          <p class="lead" style="text-align: justify;color: white;">
+          <div class="col-lg-10  hover-shadow centeri" >
+             <img class="" src="{{ .image2 | absURL }}" alt="" style="width:100%;height:auto; ">
+          </div>
+      </div>
+      <div class="col-lg-12 "  >
+
+      <div class="col-lg-12  " >
+          <a href="https://neuron.nz">
+            <h3 class="section-title  " style="color: rgb(0, 0, 0); padding-top: 30px;"> Device Management "Neuron ACS" </h3></a>
+          <p class="lead   " style="text-align: justify;color: black;">
             Neuron ACS is a multi-protocol orchestration suite for 
             the management and control of customer premises devices. Neuron has the ability to manage ONTs, Routers,
              Gateways, Access-Points, and IP Phones within the home environment or wide area network.</p>
+             <p style="text-align: justify;"> 
+               Neuron is an off-the-shelf, turnkey soltuion for service providers looking to gain insight into their 
+               device estate driving a proactive approach to cutomer satisfaction and reducing churn.
+             </p>
+             
+              <h6> Security</h6>
+             <p> We have developed Neuron with security as a first priority. Using TLS 1.2 for our frontend and NBI,
+                and the highest CPE-supported level of encryption for outbound SBI, Neuron ensured your data stays safe and secure.
+             </p>
+             <h6 >Painless Integration</h6>
+             <p>
+              Neuron’s RESTFUL API makes any backend integration provided with Insomnia, speeding integration with any backend system.
+             </p>
+             <h6>  Easy Customization  </h6>
+             <p> Neuron deploys a GUI-driven Policy Engine, allowing for easy governance of any CPE estate by removing the requirement for a developer to write scripts.   </p>
+             <h6>   Network Agnostic </h6>
+             <p>   Neuron is a network agnostic platform which can integrate seamlessly to any existing or new network. </p>
+             <h6>   Device Agnostic </h6>
+             <p> Neuron supports any CWMP complaint device off-the-shelf. We have tested wide variety of devices from vendors including Huawei, Mikrotik, Inbox, Netcomm and many more.   </p>
+             
          </div>
        </div>
       
@@ -30,27 +54,27 @@
     </div>
   </div>
 
-{{end}}
+  {{end}}
 
-<!-- /tr069 test -->
-{{ partial "tr069.html" . }}
-<!-- /tr069 test -->
+          <!-- /tr069 test -->
+          {{ partial "tr069.html" . }}
+          <!-- /tr069 test -->
 
+
+   
 
   <div class="container">
     <div class="row">
       {{ range .Data.Pages}}
       <!-- recharch item -->
-      <div class="col-lg-6 col-sm-4 " style="padding-right: 60px; padding-left: 0px;">
+      <div class="col-lg-6 col-sm-4 " >
 
           {{ .Render "neuron" }}
 
           <div class="col-lg-6 col-sm-4 " >
             <h2>
               <div class="col-lg-6 col-sm-4 " >
-                <h2>
-                  
-                </h2>
+                
               </div>
             </h2>
           </div>
