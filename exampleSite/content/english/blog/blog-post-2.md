@@ -7,7 +7,7 @@ bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : ""
 # post thumbnail
-image: "images/blog/c"
+#image: "images/blog/c"
 # post author
 #author: "John Doe"
 # taxonomy
