@@ -2,10 +2,10 @@
 title: 'WiFi 6 '
 date: 2020-10-07T15:27:17.000+06:00
 bg_image: images/backgrounds/page-title.jpg
-description: ''
-image: ''
+description: 'Wi-Fi 6'
+image: 'images/neuron/acs-1.PNG'
 type: post
-categories: []
+
 
 ---
 ### 
