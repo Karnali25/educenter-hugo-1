@@ -95,6 +95,7 @@ link = "plugins/venobox/venobox.min.js"
 link = "plugins/filterizr/jquery.filterizr.min.js"
 [[params.plugins.js]]
 link = "plugins/google-map/gmap.js"
+
 [params.preloader]
 enable = true
 preloader = "images/preloader.gif"
