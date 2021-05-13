@@ -96,8 +96,7 @@ link = "plugins/filterizr/jquery.filterizr.min.js"
 [[params.plugins.js]]
 link = "plugins/google-map/gmap.js"
 [params.preloader]
-enable = false
-preloader = "images/ "
+
 [params.subscription]
 enable = true
 mailchimp_form_action = ""
